@@ -17,14 +17,6 @@ def extendDisk(disk: str) -> list[int | None]:
                 diskmap.append(None)
     return diskmap
 
-def find(arr: list, search, start: int = 0):
-    if start >= len(arr) or start < 0:
-        return -1
-    for i, val in enumerate(arr, start):
-        if val == search:
-            return i
-    return -1
-
 def defragmentDisk(diskmap: list[int | None]) -> list[int]:
     emptyIdx = diskmap.index(None)
     i = len(diskmap) - 1
