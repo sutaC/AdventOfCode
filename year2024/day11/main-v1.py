@@ -27,6 +27,6 @@ def blink(stones: list[int], blinks: int) -> None:
         
 # Start
 stones = getInput("input.txt")
-blink(stones, 75)
+blink(stones, 25)
 count = len(stones)
 print(f"+===+\n{count}\n+===+")
